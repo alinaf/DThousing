@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import "https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Pacifico|Playfair+Display";
+@import "https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Pacifico|Playfair+Display|Satisfy";
 
 /* Colors
 #0b3a2c ;  #3dab9b ; #65893a ; #a5c67a ; #fce300
@@ -2638,8 +2638,8 @@
 		}
 
 		.wrapper.style1 {
-			background: #f6755e;
-			color: #fcdcd6;
+			background: #a5c67a;
+			color: rgba(255,255,255,.8);
 		}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5 {
@@ -2699,6 +2699,10 @@
 			margin-top: -2px;
 			text-decoration: none;
 			display: inline-block;
+		}
+
+		.signature h1{
+			font-family: Satisfy, cursive;
 		}
 
 		#header nav {
@@ -2930,20 +2934,20 @@
 	#banner {
 		padding: 14em 0 12em 0;
 		background-image: url(../../images/banner.jpg);
-		background-size: cover;
+		height: 400px;
 		background-position: center top;
 		background-repeat: no-repeat;
 		text-align: center;
 	}
 
-		#banner .content {
+	/*	#banner .content {
 			-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
 			-webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.75s ease-in-out;
 			-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
 			transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
 			opacity: 1;
 		}
-
+*/
 		#banner h1 {
 			font-size: 3em;
 			color: #25a2c3;
@@ -3009,13 +3013,13 @@
 
 		}
 
-		body.is-loading #banner .content {
+	/*	body.is-loading #banner .content {
 			opacity: 0;
 			-moz-transform: translateY(1em);
 			-webkit-transform: translateY(1em);
 			-ms-transform: translateY(1em);
 			transform: translateY(1em);
-		}
+		}*/
 
 /* Main */
 
