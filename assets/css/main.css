@@ -8,7 +8,7 @@
 
 
 @font-face {
-   font-family: Fivo;
+   font-family: FivoBold;
    src: url(FivoSans-Bold.otf);
 }
 
@@ -75,10 +75,6 @@
 		-webkit-text-size-adjust: none;
 	}
 
-	.bigImage img {
-		width: 100%;
-		max-width: 100%;
-	}
 
 /* Box Model */
 
@@ -2737,13 +2733,32 @@
 		text-align: center;
 	}
 
+	.bigImage img {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.leftImage img {
+		width: 300px;
+	}
+
+	.rightImage img {
+		width: 300px;
+	}
+
+
+	.wrapper.style2 .bigImage p {
+		font-size: 1.2em;
+		font-family: FivoBold, sans-serif;
+	}
 	.headline {
 		text-align: center;
 	}
 
+
 	.headline h1{
 		margin-top: 0px;
-		font-size: 7em;
+		font-size: 5.5em;
 		margin-bottom: 5px;
 	}
 
@@ -2753,6 +2768,8 @@
 		font-size: 1.5em;
 		text-transform: none;
 		margin-bottom: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.headline h3{
@@ -2871,6 +2888,10 @@
 		font-size: 1.3em;
 	}
 
+		.image.left, .image.right {
+			max-width: 100%;
+		}
+
 	}
 
 	@media screen and (max-width: 480px) {
@@ -2885,6 +2906,10 @@
 	.headline h2 {
 		font-size: 1.3em;
 	}
+
+	.image.left, .image.right {
+			max-width: 100%;
+		}
 
 
 	}
