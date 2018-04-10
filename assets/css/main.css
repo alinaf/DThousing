@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import "https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Pacifico|Playfair+Display|Satisfy";
+@import "https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Pacifico|Playfair+Display|Satisfy|Abhaya+Libre";
 
 /* Colors
 #0b3a2c ;  #3dab9b ; #65893a ; #a5c67a ; #fce300
@@ -8,14 +8,28 @@
 
 
 @font-face {
-   font-family: Mont;
-   src: url(Mont-ExtraLightDEMO.otf);
+   font-family: Fivo;
+   src: url(FivoSans-Bold.otf);
 }
 
 @font-face {
-   font-family: Mont;
-   src: url(Mont-HeavyDEMO.otf);
-   font-weight: bold;
+   font-family: FivoOblique;
+   src: url(FivoSans-Bold-Oblique.otf);
+}
+
+@font-face {
+   font-family: Fivo;
+   src: url(FivoSans-Regular.otf);
+}
+
+@font-face {
+   font-family: FivoRegularOblique;
+   src: url(FivoSans-Oblique.otf);
+}
+
+@font-face {
+   font-family: FivoOblique;
+   src: url(FivoSans-Bold-Oblique.otf);
 }
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -25,6 +39,10 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+	}
+
+	p {
+		font-family: 'Abhaya Libre', serif;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1694,7 +1712,8 @@
 	h1, h2, h3, h4, h5, h6 {
 		color: #3dab9b;
 		font-weight: 700;
-		font-family: "Montserrat", sans-serif;
+		font-family: FivoOblique, sans-serif;
+		text-transform: uppercase;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
 	}
@@ -2637,9 +2656,25 @@
 			color: #3dab9b;
 		}
 
+		.wrapper h1 {
+			font-size: 2.7em;
+		}
+
+		.wrapper h3 {
+			font-size: 1.5em;
+			font-family: FivoOblique, sans-serif;
+		}
+
 		.wrapper.style1 {
-			background: #a5c67a;
+			background: #69cff6;
 			color: rgba(255,255,255,.8);
+		}
+
+		.wrapper.style1 p {
+			font-size: 1.5em;
+			text-align: left;
+			margin-left: 10%;
+			margin-right: 10%;
 		}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5 {
@@ -2712,6 +2747,12 @@
 
 		.signature h1{
 			font-family: Satisfy, cursive;
+			text-transform: none;
+			margin-bottom: 10px;
+		}
+
+		.signature h3 {
+			font-family: FivoRegularOblique, sans-serif;
 		}
 
 		#header nav {
@@ -3173,7 +3214,7 @@
 		}
 
 		#footer a {
-			color: #c8e7f0;
+			color: #a5c67a;
 			text-decoration: none;
 		}
 
@@ -3216,7 +3257,7 @@
 		@media screen and (max-width: 480px) {
 
 			#footer {
-				padding: 2em 0 0.1em 0;
+				padding: 2em 2em 0.1em 2em;
 			}
 
 				#footer ul li {
