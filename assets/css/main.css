@@ -23,6 +23,12 @@
 }
 
 @font-face {
+   font-family: FivoMedium;
+   src: url(FivoSans-Medium.otf);
+}
+
+
+@font-face {
    font-family: FivoRegularOblique;
    src: url(FivoSans-Oblique.otf);
 }
@@ -2125,8 +2131,30 @@
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 60%;
 		}
+
+		.image.right.small {
+			max-width: 30%;
+		}
+
+		.wrapper.style2 .image.left p{
+			font-size: 1em;
+			/*font-family: FivoMedium, sans-serif;*/
+			margin-top: 15px;
+			margin-bottom: 0;
+			text-align: center;
+		}
+
+		.wrapper.style2 .image.right p {
+			font-size: 1em;
+			/*font-family: FivoMedium, sans-serif;*/
+			margin-top: 15px;
+			margin-bottom: 0;
+			text-align: center;
+		}
+
+		
 
 			.image.left img, .image.right img {
 				width: 100%;
@@ -2750,6 +2778,7 @@
 	.wrapper.style2 .bigImage p {
 		font-size: 1.2em;
 		font-family: FivoBold, sans-serif;
+		text-align: center;
 	}
 	.headline {
 		text-align: center;
@@ -2926,7 +2955,7 @@
 		-ms-transition: -ms-transform 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: #0b3a2c;
+		background: #a5c67a;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3052,12 +3081,24 @@
 
 	#banner {
 		padding: 14em 0 12em 0;
-		background-image: url(../../images/banner.jpg);
-		height: 400px;
-		background-position: center top;
-		background-repeat: no-repeat;
+		/*background-color: #65893a;
+		height: 400px;*/
+	/*	background-position: center top;
+		background-repeat: no-repeat;*/
 		text-align: center;
+		background-image: url("../../images/cover.png");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
+
+
 
 	/*	#banner .content {
 			-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
@@ -3068,7 +3109,7 @@
 		}
 */
 		#banner h1 {
-			font-size: 3em;
+			font-size: 5em;
 			color: #25a2c3;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
@@ -3099,7 +3140,7 @@
 				}
 
 				#banner h1 {
-					font-size: 2.25em;
+					font-size: 5em;
 				}
 
 		}
@@ -3119,7 +3160,7 @@
 			}
 
 				#banner h1 {
-					font-size: 2em;
+					font-size: 4em;
 				}
 
 				#banner p {
@@ -3272,6 +3313,7 @@
 		text-align: center;
 		color: rgba(255,255,255, 0.5);
 		font-size: .85em;
+		font-family: Fivo;
 	}
 
 		#footer h2 {

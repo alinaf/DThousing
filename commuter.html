@@ -1,82 +1,312 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
+<head>
 	<link rel="icon" href="images/favicon.png">
-	<title>To go the distance</title>
+	<title>Home Away from Home</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<meta property="og:type"               content="article" />
-	<meta property="og:title"              content="Housing housing housing" />
-	<meta property="og:description"        content="Facebook preview"/>
-	<meta property="og:image"              content="images/ff.png" />
+	<meta property="og:title"              content="Home Away from Home" />
+	<meta property="og:description"        content="Deconstructing the housing conversation"/>
+	<meta property="og:image"              content="images/gak.jpg" />
+
+
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
 </head>
-	<body class="subpage">
+<body class="subpage">
 
-		<!-- Header -->
-			<header id="header">
-				<nav class="left">
-					<a href="#menu"><span>Menu</span></a>
-				</nav>
-				<a href="http://dailytrojan.com/" class="logo">DAILY TROJAN</a>
-			</header>
+	<!-- Header -->
+	<header id="header">
+		<nav class="left">
+			<a href="#menu"><span>Menu</span></a>
+		</nav>
+		<a href="http://dailytrojan.com/" class="logo">DAILY TROJAN</a>
+	</header>
 
-		<!-- Menu -->
+	<!-- Menu -->
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#one">Letter from the Editor</a></li>
-					<li><a href="elements.html">Portal</a></li>
-					<li><a href="elements.html">Eviction</a></li>
-					<li><a href="elements.html">s3</a></li>
-					<li><a href="elements.html">Transfer</a></li>
-					<li><a href="elements.html">Gak</a></li>
-					<li><a href="elements.html">Commuter</a></li>
-					<li><a href="elements.html">Legal</a></li>
+					<li><a href="expo.html">No longer welcome</a></li>
+					<li><a href="commuter.html">To go the distance</a></li>
+					<li><a href="gak.html">A place to call home</a></li>
+					<li><a href="transfer.html">Transfer student housing</a></li>
+					<li><a href="special_interest.html">Special interest spaces</a></li>
+					<li><a href="portal.html">A ticket home</a></li>
+					<li><a href="interactive.html">Popular housing choices</a></li>
 				</ul>
 			</nav>
 
-		<!-- Main -->
-			<section id="main" class="wrapper style2">
-			
-				<header class="headline">
-							<h1>To go the distance</h1>
-							<h2> The Gakusei House is an affordable living destination <br>for a select group of low-income students at USC</h2><br>
-							<h3>By Karan Nevatia, News Editor</h3>
-							<br><br>
-						</header>
-	
-					<div class="bigImage">
-						<img src="images/map.jpg" alt="" />
-					</div>
-				<div class="inner">
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-				
-					<p> Aenean iaculis, neque sed pretium egestas, nunc lacus tempus enim, nec tincidunt urna massa a libero. Aenean mattis bibendum est, a pharetra elit. Morbi commodo lectus quis blandit mattis. Cras pharetra quam quis tincidunt tempus. Donec a sem magna. Nullam purus purus, fermentum id lorem sit amet, porta elementum neque. Proin vulputate metus ac faucibus luctus.</p>
+
+	<!-- Main -->
+	<section id="main" class="wrapper style2">
+
+
+
+		<header class="headline">
+			<h1>To go the distance</h1>
+			<h2> Commuter students describe their disconnect to the USC community <br>and the added costs of the commuter lifestyle, including gas and parking</h2><br>
+			<h3>By Karan Nevatia, News Editor</h3>
+			<br><br>
+		</header>
+
 		
-					<p>Ut congue purus sed elit consectetur tempus. Duis convallis, quam quis pellentesque vestibulum, tellus arcu hendrerit ante, sed dictum felis nisl vitae magna. Integer et sapien a erat molestie tempor. Cras est odio, suscipit id porttitor id, mollis et ligula. Curabitur molestie mi molestie accumsan faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer porta malesuada pellentesque. Morbi imperdiet dictum velit, eu volutpat sem posuere non. Fusce ullamcorper gravida velit, sed sollicitudin libero iaculis id. Ut eu neque non odio fringilla faucibus nec quis neque. Quisque et nisi fermentum, tincidunt libero a, condimentum ligula. Quisque ultrices blandit lacinia. Nulla velit lorem, placerat nec eros ut, fermentum pharetra dolor. Maecenas arcu ipsum, mattis et suscipit sed, convallis nec lectus. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
+		<div class="bigImage">
+			<img src="images/DJZ_5313.jpg" alt="" />
+		</div>
+		<div class="inner">
+		<br>
+			<p>Los Angeles is, at its heart, a commuter city, and a sizable 10 percent of USC students are commuters, according to the USC Admissions Blog in 2014. Over time, the University has evolved its reputation as a commuter campus into a school that offers an immersive on-campus college experience, transforming the undergraduate and graduate students who still commute various distances to get to campus into the minority. <br><br></p>
+
+				<span class="image left"><img src="images/4894.jpg" alt="" /><p>Gabriela Perez, a junior studying political science, has a roughly two hour commute from Beaumont, Calif. to USC every Tuesday and Thursday. (Daniel Zhu | Daily Trojan)</p></span>
+
+				<p>
+
+				When Gabriela Perez wakes up in the morning, she doesn’t wake up a half hour before her first class. She doesn’t walk five minutes from her apartment to reach campus. And she doesn’t always know if she will be late for class despite leaving hours before her first class. <br><br>Instead, Perez, a junior majoring in political science, wakes up hours before class to drive nearly two hours from her home in Beaumont, Calif., a city about 20 minutes from Palm Springs. Due to the fluctuating traffic in Los Angeles County, her commutes, which occur every Tuesday and Thursday, are always uncertain. <br><br>
+
+					Although there are no current statistics on the number of commuter students at USC, a 2014 USC Admissions Blog said about 10 percent of USC students are commuters. <br><br>
+
+					For students like Perez, the commute to and from school every day presents more issues than simply traffic: High costs of gas and parking, challenges getting involved in student life and a lack of space to rest on campus are a few of the major issues commuter students felt affected their university experience. <br><br>
+
+
+
+
+					“It’s definitely disconnected me a lot,” said Nicholas Foster, a sophomore studying environmental studies, who commutes from Arcadia to USC. “I spend roughly four hours a day, [which is] 20 hours a week, commuting. Whereas I could be studying, connecting with the student life, being more involved with my community.”<br><br>
+
+</p></div>
+				<div class="bigImage">
+					<img src="images/map.jpg" alt="" />
+				</div>
+				<p>
+
+					Most students who commute to USC do so because of the high cost of living on or near campus. Foster is no exception; a former veteran, he lives in Arcadia, a city to the east of Pasadena.<br><br>
+
+					Foster’s commute is different from others because he doesn’t drive to school — he takes two buses from his home to a Metro Gold Line station, from which he travels to Union Station to transfer to the Red or Purple Line. He goes through one more transfer at the 7th Street/Metro Center station, from which he takes the Expo Line to USC. Altogether, it takes Foster about two hours to reach campus. <br><br>
+
+						“Housing is an issue,” Foster said. “With my benefits [as a veteran], I’m only allocated a certain amount of money for housing, and within the L.A. downtown area, it’s really expensive. So that’s the main reason I commute.”<br><br>
+
+						Beyza Bozeby, a junior studying computer science, lives with her family in Culver City, which is roughly a 30-minute drive from USC. She also cited cost as one of the major reasons why she commutes to school. <br><br>
+
+
+						</p>
+
+					<span class="image right"><img src="images/DJZ_5819.jpg" alt="" /><p>Nicholas Foster, a veteran and sophomore studying environmental science, commutes to USC via Metro from Artesia. As a veteran, he is limited in his housing choices in downtown L.A. since he is allocated a specific amount towards housing. (Daniel Zhu | Daily Trojan)</p></span>
+
+
+					<p>
+
+						However, eliminating additional housing costs still comes with a price. Foster says that the cost of riding the Metro to school every day adds up, and Bozeby and Perez, who drive to school, pay for gas and parking at USC. <br><br>
+
+						Depending on which on-campus structure they park in, parking rates at USC can reach as high as $499.50 per semester, or $111 per month. Bozeby and Perez both park on campus, but because Perez drives to campus only on Tuesdays and Thursdays, she pays for parking at the daily $10 rate rather than monthly or by semester. <br><br>
+						Debbie Lee, the Undergraduate Student Government President for the 2018-19 school year, said that she and Vice President Blake Ackerman want to advocate for lower parking rates for commuter students. <br><br>
+
+						“Something Blake and I want to advocate for is seeing ... whether or not we can allocate certain days of the week to amount to [a certain rate] and another pair of days would amount to [a different rate],” Lee said. “We want to play around with the idea of making sure that parking isn’t capped at such an outrageous and unaffordable number for students. We want to see how we can tailor parking best towards commuter students who may not be on this campus all the time.”<br><br>
+
+						Due to these extra obstacles, commuter students can also struggle with becoming involved in campus activities and student organizations. For Bozeby, she describes a disconnect with the USC community and usually has to decide if attending a late event is worth the time to wait on campus.<br><br>
+
+						“If I have to wait for an event, I don’t have anywhere to go,” Bozeby said. “If I decided to stay and attend an event, I feel more involved in the community, but it can often take four hours between my classes and when the event starts, so I usually just go home ... Sometimes I feel like I’m not part of the USC community that much, because I can’t get involved on campus.”<br><br>
+
+						Perez noted how the issues affecting commuter students are often overlooked because the challenges aren’t something student leaders and administrators on campus would think about. <br><br>
+
+						“There’s a lot of little challenges that you wouldn’t think about day to day, ... like coming to office hours — sometimes even that’s very difficult,” Perez said. “I’ve had to Skype with professors just because my schedule doesn’t allow me to do much.” <br><br>
+
+
+						</p>
+
+						<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/Gabriela.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/Beyza.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/NicholasFoster.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<p><br>
+
+						
+						In an email to the Daily Trojan, Director of Campus Activities Gabriel Valenzuela said that there are currently no University programs targeted toward supporting commuter students. <br><br>
+
+						“Lounges are available throughout campus, and on each level of [the Tutor Campus Center],” Valenzuela said in the email. “Microwaves are available in the TCC food court as well as in several academic unit areas ... Students can secure their belongings at the Lyon Center [lockers] and park nearby. The ... Starbucks located next to the Lyon Center could also be a place to study and do homework. [I] just don’t know if the students are aware of some of these opportunities.”<br><br>
+
+						</p>
+						<span class="image left"><img src="images/DJZ_5311.jpg" alt="" /><p>Beyza Bozbey, a junior studying computer science, has a 30-minute commute from Culver City. (Daniel Zhu / Daily Trojan) </p></span>
+<p>
+
+						Both Bozeby and Perez said lockers and microwaves would be helpful, but had not been made aware of the resources Valenzuela mentioned. <br><br>
+
+						In previous years, USG has advocated for the creation of a Commuter Student Lounge on campus, according to Lee. <br><br>
+
+						“There’s been a lot of talk about a commuter lounge, which goes into a larger conversation about space on this campus,” Lee said. “There’s a space committee that’s been convening periodically throughout the year, and one of the talks ... is how they can support commuter students through space. I know there’s been talks of having a space where there’s a microwave, lockers, etc., so that commuter students have a place to go when they are on campus.”<br><br>
+
+						However, the University hasn’t approved the creation of a lounge specifically for commuter students, pointing them instead to the resources that Valenzuela mentioned. <br><br>
+
+						Lee said she views commuter students as an underserved population at USC, but that she hopes to change that through her work in USG. <br><br> 
+
+						“They’re students, just as much as anyone who lives in the Village or in a dorm. Just because you don’t live on campus, it doesn’t mean you’re experience should be any less than other students,” Lee said. “This conversation goes way beyond Blake and myself — as two students who live on campus, we don’t understand the struggles of commuter students, but we want to make sure they are being heard, and that we’re supporting them in any way that we can.”
+					</p>
 				</div>
 			</section>
 
-		<!-- Footer -->
-			<footer id="footer">
-						PRODUCED BY <br>
+			<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-						ALINA ABIDI, Online Projects Editor, 
-						SARAH CHAN, Features Editor, 
-						TERRY NGUYEN, Features Editor<br>
-						NAYLEE NAGDA, Design Director, EMMA PEPLOW, Editor-in-Chief, JONATHON XUE, Multimedia Editor<br><br>
-						&copy; University of Southern California | Daily Trojan 2018. All rights reserved. | <a href="https://templated.co">TEMPLATED</a></p>	
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+			<!-- Footer -->
+			<footer id="footer">
+				PRODUCED BY <br>
+
+				SARAH CHAN, Features Editor, 
+				TERRY NGUYEN, Features Editor<br>
+				EMMA PEPLOW, Editor-in-Chief,
+				ALINA ABIDI, Online Projects Editor<br>
+				<br>
+				&copy; University of Southern California | Daily Trojan 2018. All rights reserved. | <a href="https://templated.co">TEMPLATED</a></p>	
 			</footer>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+		</body>
+		</html>

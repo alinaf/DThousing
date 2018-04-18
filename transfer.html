@@ -1,77 +1,240 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
+<head>
 	<link rel="icon" href="images/favicon.png">
-	<title>Transfer students struggle to secure housing</title>
+	<title>Home Away from Home</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<meta property="og:type"               content="article" />
-	<meta property="og:title"              content="Housing housing housing" />
-	<meta property="og:description"        content="Facebook preview"/>
-	<meta property="og:image"              content="images/ff.png" />
+	<meta property="og:title"              content="Home Away from Home" />
+	<meta property="og:description"        content="Deconstructing the housing conversation"/>
+	<meta property="og:image"              content="images/gak.jpg" />
+
+
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
 </head>
-	<body class="subpage">
+<body class="subpage">
 
-		<!-- Header -->
-			<header id="header">
-				<nav class="left">
-					<a href="#menu"><span>Menu</span></a>
-				</nav>
-				<a href="http://dailytrojan.com/" class="logo">DAILY TROJAN</a>
-			</header>
+	<!-- Header -->
+	<header id="header">
+		<nav class="left">
+			<a href="#menu"><span>Menu</span></a>
+		</nav>
+		<a href="http://dailytrojan.com/" class="logo">DAILY TROJAN</a>
+	</header>
 
-		<!-- Menu -->
-			<nav id="menu">
+	<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#one">Letter from the Editor</a></li>
-					<li><a href="elements.html">Portal</a></li>
-					<li><a href="elements.html">Eviction</a></li>
-					<li><a href="elements.html">s3</a></li>
-					<li><a href="elements.html">Transfer</a></li>
-					<li><a href="elements.html">Gak</a></li>
-					<li><a href="elements.html">Commuter</a></li>
-					<li><a href="elements.html">Legal</a></li>
+					<li><a href="expo.html">No longer welcome</a></li>
+					<li><a href="commuter.html">To go the distance</a></li>
+					<li><a href="gak.html">A place to call home</a></li>
+					<li><a href="transfer.html">Transfer student housing</a></li>
+					<li><a href="special_interest.html">Special interest spaces</a></li>
+					<li><a href="portal.html">A ticket home</a></li>
+					<li><a href="interactive.html">Popular housing choices</a></li>
 				</ul>
 			</nav>
 
-		<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="inner">
-					<header class="headline">
-						<h1>Transfer students struggle to secure housing</h1>
-						<p>By Katherine Wiles, Assistant City Editor</p>
-						<br><br>
-					</header>
-					<div class="image fit">
-						<img src="images/map.jpg" alt="" />
-					</div>
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-					<p> Aenean iaculis, neque sed pretium egestas, nunc lacus tempus enim, nec tincidunt urna massa a libero. Aenean mattis bibendum est, a pharetra elit. Morbi commodo lectus quis blandit mattis. Cras pharetra quam quis tincidunt tempus. Donec a sem magna. Nullam purus purus, fermentum id lorem sit amet, porta elementum neque. Proin vulputate metus ac faucibus luctus.</p>
-					<p>Ut congue purus sed elit consectetur tempus. Duis convallis, quam quis pellentesque vestibulum, tellus arcu hendrerit ante, sed dictum felis nisl vitae magna. Integer et sapien a erat molestie tempor. Cras est odio, suscipit id porttitor id, mollis et ligula. Curabitur molestie mi molestie accumsan faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer porta malesuada pellentesque. Morbi imperdiet dictum velit, eu volutpat sem posuere non. Fusce ullamcorper gravida velit, sed sollicitudin libero iaculis id. Ut eu neque non odio fringilla faucibus nec quis neque. Quisque et nisi fermentum, tincidunt libero a, condimentum ligula. Quisque ultrices blandit lacinia. Nulla velit lorem, placerat nec eros ut, fermentum pharetra dolor. Maecenas arcu ipsum, mattis et suscipit sed, convallis nec lectus. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
+
+	<!-- Main -->
+	<section id="main" class="wrapper style2">
+		
+		<div class="bigImage">
+			<img src="images/TransferColor.jpg" alt="" />
+		</div>
+		<header class="headline">
+		<br>
+			<h3>By Katherine Wiles, Assistant City Editor
+</h3>
+		</header>
+
+		<div class="inner">
+		<br>
+			<p>A’ali’i Dukelow bikes 15 minutes to get to campus every day. Dukelow, a junior majoring in journalism, transferred to USC in Fall 2017 from Seattle University and struggled to find housing near USC. <br><br>
+
+Originally from Maui, Hawaii, Dukelow had never been to Los Angeles before the start of his first semester at USC.<br><br>
+
+Unlike freshmen, who are guaranteed a space in USC Housing if they apply by May 1, transfer students are not accorded this accommodation. <br><br>
+
+And since some transfer students are accepted into the University in May or June, many, like Dukelow, say finding housing is difficult only a few months before the start of the semester. Dukelow said he found very few resources for transfer students looking for off-campus housing. USC has a webpage that details housing for transfer students, but spaces are still offered on a first-come, first-serve basis, and priority on the USC Housing Portal is given to freshmen. <br><br>
+
+“USC Housing is able to place the majority of transfer students who apply for university housing,” USC Housing said in an email to the Daily Trojan. “However, many transfer students choose not to apply for housing and they commute to USC from cities throughout the Greater Los Angeles area.” USC Housing also said they recommend that transfer students apply for housing as quickly as possible.<br><br>
+
+“After class standing, the single most important factor in determining if and where a student will be assigned is the date when the application was submitted,” USC Housing wrote. <br><br>
+
+Dukelow said he expected there to be housing reserved for transfer students, since the transfer acceptance rate is high at USC. USC’s Fall 2017 transfer class size consisted of 1,300 students. 
+“I called [USC Housing] and got in touch with a bunch of different people, and a lot of the times [people I spoke to] just told me to check out Facebook,” Dukelow said. “I just felt like they would sort of just try to brush me off whenever I would try to really get help from them.” 
+
+<br><br></p>
+
+				<span class="image left"><img src="images/dukelow.jpg" alt="" /><p>Junior A’ali’i Dukelow stands in front of his house on Juliet St. He found his current residence through Craigslist. (Daniel Zhu / Daily Trojan) </p></span>
+
+				<p>
+Unfamiliar with USC and its surrounding area, Dukelow turned to Craigslist to search for housing. He spent several weeks on the site last summer trying to find a suitable place to live. 
+Eventually, he settled on a house west of Vermont Avenue and Adams Boulevard, and he currently lives with tenants who do not go to USC. <br><br>
+
+“It’s really interesting how living further off campus affects how involved you can be or just how you build community with other students,” Dukelow said. “Every time someone asks me, ‘You live off campus, right?’ and I say I live on Juliet Street and they’re always just like, ‘Where is that?’” <br><br>
+
+Other transfer students like Megan Ely, a sophomore majoring in journalism, learn they are admitted to the University with ample time to apply for student housing. Ely, who transferred to USC in Fall 2017, participated in the Trojan Transfer Plan, a program that offers personalized transfer planning sessions with an admissions counselor. She learned of her acceptance in March 2017 and promptly began searching for housing.<br><br>
+
+“I was in there immediately trying to get myself into the lotteries and everything as quick as I could,” Ely said. “But I didn’t hear back from Housing until June because a lot of other transfers hadn’t even heard if they were in yet.” 
+</p></div>
+				<div class="bigImage">
+					<img src="images/8328.jpg" alt="" />
+					<br><br><p>USC offers a resource page to incoming transfer students. At the time of publication, the page’s link to transfer student housing was inaccessible.</p>
 				</div>
-			</section>
+				<p>
 
-		<!-- Footer -->
+					Ely said she was lucky to receive a spot through USC Housing in the Annenberg House, but she said it was not an ideal living situation for a first-year student due to the mix of undergraduate and graduate students and the 15-minute walking distance from campus.<br><br>
+
+“You very much didn’t have that undergraduate dorm vibe that you might see in the Village and those places where there are a lot of sophomores and freshmen,” Ely said. <br><br>
+
+While USC was able to accommodate her housing needs, Ely said she was still stressed out during the process. She studied in France her freshman year and was unsure how she was going to find off-campus housing while out of the country. <br><br>
+
+“It was kind of like ‘Here’s when you can apply, we’ll get back to you when we get back to you,’” Ely said. “I think it would be good if they kind of had a specific set time of when you’re going to hear back on USC Housing.”<br><br>
+
+Ely moved into her sorority house after her first semester. Some transfer students look for off-campus housing after applying to USC Housing because there is no set date for when they will learn whether they received housing. Stephanie Corrigan, a junior majoring in political science, transferred to USC in Fall 2017 from George Washington University and lives off-campus in the Element apartment complex owned by leasing company StuHo.
+<br><br>
+She recalled the housing process as hectic months of wondering and waiting. Corrigan was not offered housing in USC Village until early July. 
+
+
+
+					<span class="image right"><img src="images/5394.jpg" alt="" /><p>Sophomore Megan Ely learned of her USC admittance in March and was able to secure a spot in the Annenberg House. She now has moved to live in her sorority house. (Emily Smith/Daily Trojan)
+</p></span>
+
+
+					<p>“By the time I was offered that spot, it had been weeks since I had last heard from [them],” Corrigan said. “I had already committed to a girl for off-campus housing and it didn’t seem ethical to drop after telling her that I would live with her.”  
+
+Corrigan, like other transfer students looking for housing, met her now-roommate on a Facebook page for USC transfer students. Her search for housing was difficult because, like Dukelow, she was unfamiliar with the area and local housing prices and management companies.<br><br>
+David Glasgow, the Assistant Vice Provost of Undergraduate Programs at USC, has had transfer students voice these concerns to him before. He said the University has implemented different programs to help transfer students once they arrive on campus, including events for transfer students to become acquainted with the University during Welcome Week. Glasgow also met with the president of the Transfer Student Community, a student organization that pushes for more resources for transfer students, and provides them with an opportunity to find a community on campus. 
+ <br><br></p>
+						<span class="image left"><img src="images/8359.jpg" alt="" /><p>Junior Stephanie Corrigan lives with mostly all transfer students and found her roommate on a Facebook page for USC transfers. (Terry Nguyen/Daily Trojan)
+</p></span>
+<p>
+						“It’s difficult for transfer students coming from another institution and having to adjust quickly and so my heart goes out to them,” Glasgow said. “I’m totally sympathetic to their challenges and that’s why I’ve gone outside the scope of my responsibilities to form some sort of bridge with them.”<br><br>
+ However, since transfer housing falls under the jurisdiction of USC Housing, Glasgow can only refer students to the appropriate people to speak to within USC Housing.<br><br>
+“I’d actually like to know myself as to why we don’t have housing for transfer students or why there’s a shortage of housing for transfer students,” Glasgow said.<br><br>
+
+Dukelow said he wishes USC made more resources available for transfer students. He believes USC Housing should appoint a counselor assigned specifically to help transfer students with housing.<br><br>
+
+“It just seemed like transfers are second rate and I expected for the school to have housing options reserved specifically for transfers because they accept so many transfers,” Dukelow said. “I felt really unsupported by the University because I kind of just expected more.”</p></p></section>
+
+
+			<!-- Footer -->
 			<footer id="footer">
-						PRODUCED BY <br>
+				PRODUCED BY <br>
 
-						ALINA ABIDI, Online Projects Editor, 
-						SARAH CHAN, Features Editor, 
-						TERRY NGUYEN, Features Editor<br>
-						NAYLEE NAGDA, Design Director, EMMA PEPLOW, Editor-in-Chief, JONATHON XUE, Multimedia Editor<br><br>
-						&copy; University of Southern California | Daily Trojan 2018. All rights reserved. | <a href="https://templated.co">TEMPLATED</a></p>	
+				SARAH CHAN, Features Editor, 
+				TERRY NGUYEN, Features Editor<br>
+				EMMA PEPLOW, Editor-in-Chief,
+				ALINA ABIDI, Online Projects Editor<br>
+				<br>
+				&copy; University of Southern California | Daily Trojan 2018. All rights reserved. | <a href="https://templated.co">TEMPLATED</a></p>	
 			</footer>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+		</body>
+		</html>
